@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(carro10.jpg);
+    background-size: cover;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact, .content h2
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(21, 207, 253)
+}
+
+.contact, .content p
+{
+    font-weight: 200;
+    font-size: 20px;
+    color: rgb(255, 255, 255)
+    
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.container .ContactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .ContactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .ContactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(107, 105, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+ 
+.container .ContactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .ContactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactform
+{
+    width: 36%;
+     padding: 28px;
+     margin-left: 25%;
+    background: rgb(255, 255, 255)
+}
+
+.contactform h2
+{
+    font-size: 30px;
+    color: rgb(6, 173, 250);
+    font-weight: 500;
+}
+
+.contactform .InputBox 
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .InputBox input,
+.contactform .InputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none ;
+}
+.contactform .InputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .InputBox input:focus ~ span, 
+.contactform .InputBox input:valid ~ span
+.contactform .InputBox textarea:focus ~ span, 
+.contactform .InputBox textarea:valid ~ span
+{
+    color: #8000ff;
+    font-size: 12px;;
+    transform: translateY(-20px);
+
+}
+
+.contactform .InputBox input[type="submit"]
+{
+    width: 100px;
+    background: #d11e5d;
+    color: rgb(9, 9, 9);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media(max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .ContactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .ContactInfo,
+    .contactform
+    {
+        width: 100%;
+    }
+}
